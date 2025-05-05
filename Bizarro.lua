@@ -1,7 +1,7 @@
 -- Admin UI Teleport, Spectate, and Player Tools
 
 local player = game.Players.LocalPlayer
-local admins = {123456789, 987654321} -- Add the UserIds of your admins here
+local admins = {123456789, 8026829059} -- Add the UserIds of your admins here
 local islandLocations = {
     ["Windmill Village"] = CFrame.new(100, 10, -200),
     ["Shell Town"] = CFrame.new(200, 10, -100),
