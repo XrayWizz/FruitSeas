@@ -85,7 +85,7 @@ local buttons = {"Teleport to Islands", "Teleport to NPCs", "Spectate Players", 
 local buttonOffset = 10
 for _, btnName in ipairs(buttons) do
     createButton(btnName, sidebar, UDim2.new(0.1, 0, 0, buttonOffset), function()
-        if not admins[player.UserId] then return end
+        if not table.find(admins, player.UserId) then return end
         contentPanel:ClearAllChildren()
 
         if btnName == "Teleport to Islands" then
@@ -137,4 +137,3 @@ for _, btnName in ipairs(buttons) do
     end)
     buttonOffset += 50
 end
-
