@@ -50,6 +50,21 @@ local uiCorner = Instance.new("UICorner")
 uiCorner.CornerRadius = UDim.new(0, 10)
 uiCorner.Parent = mainFrame
 
+-- Shrink the top and bottom borders
+local topBorder = Instance.new("Frame")
+topBorder.Size = UDim2.new(1, 0, 0, 5) -- Reduced height
+topBorder.BackgroundColor3 = Color3.fromRGB(48, 48, 68)
+topBorder.Position = UDim2.new(0, 0, 0, 0)
+topBorder.BorderSizePixel = 0
+topBorder.Parent = mainFrame
+
+local bottomBorder = Instance.new("Frame")
+bottomBorder.Size = UDim2.new(1, 0, 0, 5) -- Reduced height
+bottomBorder.BackgroundColor3 = Color3.fromRGB(48, 48, 68)
+bottomBorder.Position = UDim2.new(0, 0, 1, -5) -- Positioned at the bottom of the frame
+bottomBorder.BorderSizePixel = 0
+bottomBorder.Parent = mainFrame
+
 local sidebar = Instance.new("Frame")
 sidebar.Size = UDim2.new(0, 100, 1, 0)
 sidebar.BackgroundColor3 = Color3.fromRGB(48, 48, 68)
